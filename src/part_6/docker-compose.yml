@@ -1,0 +1,9 @@
+services:
+  server:
+    build: ../part_5
+    privileged: true
+  proxy:
+    build: .
+    privileged: true
+    ports:
+      - 80:8080
